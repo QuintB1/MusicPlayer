@@ -1,0 +1,63 @@
+
+<Window
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:MusicPlayer.ViewModels"
+    xmlns:views="using:MusicPlayer.Views"
+    x:Class="MusicPlayer.Views.MainWindow"
+    x:DataType="vm:MainWindowViewModel"
+    Width="1000"
+    Height="650"
+    MinWidth="700"
+    MinHeight="450"
+    Title="MusicPlayer">
+
+    <Window.DataTemplates>
+        <DataTemplate DataType="vm:PlayListsViewModel">
+            <views:PlayListsView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="vm:SettingsViewModel">
+            <views:SettingsView/>
+        </DataTemplate>
+    </Window.DataTemplates>
+
+    <Grid RowDefinitions="60,*">
+
+        <!-- Navigation header -->
+        <Border
+            Grid.Row="0"
+            Background="#202735"
+            Padding="20,10">
+
+            <StackPanel
+                Orientation="Horizontal"
+                Spacing="15"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center">
+
+                <Button
+                    Content="PlayLists"
+                    Command="{Binding ShowPlayListsCommand}"
+                    Background="#35465E"
+                    Foreground="White"
+                    Padding="20,10"/>
+
+                <Button
+                    Content="Settings"
+                    Command="{Binding ShowSettingsCommand}"
+                    Background="#35465E"
+                    Foreground="White"
+                    Padding="20,10"/>
+
+            </StackPanel>
+        </Border>
+
+        <!-- Page content -->
+        <ContentControl
+            Grid.Row="1"
+            Content="{Binding CurrentPage}"/>
+
+    </Grid>
+
+</Window>

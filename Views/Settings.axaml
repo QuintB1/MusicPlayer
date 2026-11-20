@@ -1,0 +1,19 @@
+<UserControl
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="MusicPlayer.Views.SettingsView">
+
+    <StackPanel Spacing="15" Margin="25">
+
+        <TextBlock
+            Text="Settings"
+            FontSize="28"
+            FontWeight="Bold"/>
+
+        <TextBlock
+            Text="Configure your application here."
+            FontSize="14"/>
+
+    </StackPanel>
+
+</UserControl>
