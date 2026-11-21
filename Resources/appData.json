@@ -1,5 +1,7 @@
 {
-    "RelativeArchiveURL":"PlayList_Archive",
-    "RelativePlayListsURL":"Playlists",
-    "StoredPlayLists": []
+  "RelativeArchiveURL": "Playlist_Archive",
+  "RelativePlayListsURL": "Playlists",
+  "StoredPlayLists": [
+    "FatRat Mix"
+  ]
 }

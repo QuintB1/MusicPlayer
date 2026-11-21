@@ -14,7 +14,7 @@ public class ArchiveManager
 
         private readonly string _projectDirectory =
     Path.GetFullPath(
-        Path.Combine(AppContext.BaseDirectory, "../../../../")
+        Path.Combine(AppContext.BaseDirectory, "../../../")
     );
     private String _archivePath;
     private String _playListPath;

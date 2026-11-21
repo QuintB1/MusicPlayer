@@ -10,7 +10,7 @@ public class AppDataService
 {
     private readonly string _projectDirectory =
     Path.GetFullPath(
-        Path.Combine(AppContext.BaseDirectory, "../../../../")
+        Path.Combine(AppContext.BaseDirectory, "../../../")
     );
     private readonly string _jsonPath;
     public AppDataService()
